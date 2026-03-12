@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+.col-center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 /* Header */
 header {
   background: linear-gradient(to right, #9333ea, #9c63d2);
@@ -154,6 +164,11 @@ header {
 
 .bg-pink {
   background: linear-gradient(#ec4899, #9e396c);
+  color: #fce7f3;
+}
+
+.bg-red-light {
+  background: linear-gradient(#f0550df0, #e27d2a);
   color: #fce7f3;
 }
 
@@ -395,4 +410,27 @@ footer {
 .text-white-modal-chantier a:hover {
   color: rgb(238, 110, 131);
   text-decoration: none;
+}
+
+.card-emergency {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-emergency:hover {
+  transform: translateY(-5px);
+  background-color: red;
+}
+
+.card-emergency-text {
+  background-color: white !important;
+}
+
+.card-emergency-text a {
+  color: red !important;
+}
+
+.card-emergency-text a:hover {
+  font-weight: 800;
 }
