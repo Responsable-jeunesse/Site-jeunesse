@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- link css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+
+    <title>Site jeunesse</title>
+  </head>
+  <body>
+    <header>
+      <!-- navBar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/logos/logo-espace-jeunesse.png"
+              alt="logo-espace-jeunesse"
+              height="60"
+              class="rounded-circle bg-white"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#accueil"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#activites">Actualités</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#actualites">Evènements</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#localModal"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+      <div class="container">
+        <div class="hero-content justify-content-center align-items-center">
+          <h1>L'Espace Jeunesse</h1>
+          <p>
+            L'espace dédié à la jeunesse de la communauté de commune de Yenne
+          </p>
+
+          <div>
+            <a href="#contact" class="btn btn-secondary">Nous contacter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Info -->
+    <section class="quick-info p-5">
+      <div class="container mt-3">
+        <div class="row mt-3">
+          <div class="col-lg-4 col-md-4 col-12 p-2">
+            <div
+              class="card info-card align-items-center justify-content-center"
+            >
+              <div class="icon-circle icon-purple">
+                <i class="bi bi-people text-blue"></i>
+              </div>
+              <div class="text-center mt-2">
+                <h3>11-25 ans</h3>
+                <p>Ouvert à tous les jeunes</p>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Info-jeunesModal"
+                  class="text-decoration-none"
+                  >Voir plus..
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-12 p-2">
+            <div
+              class="card info-card align-items-center justify-content-center"
+            >
+              <div class="icon-circle icon-pink">📅</div>
+              <div class="text-center mt-2">
+                <h3>Permanence</h3>
+                <p>Jeudi de 15h - 17h30</p>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#permanenceModal"
+                  class="text-decoration-none"
+                  >Voir plus..
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-12 p-2">
+            <div
+              class="card info-card align-items-center justify-content-center"
+            >
+              <div class="icon-circle icon-blue">📍</div>
+              <div class="text-center mt-2">
+                <h3>Yenne Centre</h3>
+                <p>8, pl du kiosque</p>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#localModal"
+                  class="text-decoration-none"
+                  >Voir plus..
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- actualité -->
+    <section id="activites" class="activities">
+      <div class="container">
+        <div class="row section-title">
+          <div class="text-center py-3">
+            <h2>Quoi de neuf ?</h2>
+            <p>Découvrez les infos et les activités liées à la jeunesse</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="card">
+              <img
+                src="/assets/images/gaming-jeunes.jpg"
+                alt="Gaming"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <div class="activity-icon gradient-purple">🎮</div>
+                <h3>Jeux & Gaming</h3>
+                <p>
+                  Consoles, jeux de société, tournois et soirées gaming entre
+                  amis
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1758525862515-9b19def6175a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWVuYWdlcnMlMjBhY3Rpdml0aWVzJTIwZ2FtZXN8ZW58MXx8fHwxNzY2MzE0MDg2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Gaming"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <div class="activity-icon gradient-purple">🎮</div>
+                <h3>Jeux & Gaming</h3>
+                <p>
+                  Consoles, jeux de société, tournois et soirées gaming entre
+                  amis
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1758525862515-9b19def6175a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWVuYWdlcnMlMjBhY3Rpdml0aWVzJTIwZ2FtZXN8ZW58MXx8fHwxNzY2MzE0MDg2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Gaming"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <div class="activity-icon gradient-purple">🎮</div>
+                <h3>Jeux & Gaming</h3>
+                <p>
+                  Consoles, jeux de société, tournois et soirées gaming entre
+                  amis
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1758525862515-9b19def6175a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWVuYWdlcnMlMjBhY3Rpdml0aWVzJTIwZ2FtZXN8ZW58MXx8fHwxNzY2MzE0MDg2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Gaming"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <div class="activity-icon gradient-purple">🎮</div>
+                <h3>Jeux & Gaming</h3>
+                <p>
+                  Consoles, jeux de société, tournois et soirées gaming entre
+                  amis
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Evènement -->
+    <section id="actualites" class="news">
+      <div class="container py-3">
+        <div class="row section-title mt-3">
+          <div class="text-center">
+            <h2>Actualités & Événements</h2>
+            <p>Ne manque pas nos prochains événements et activités spéciales</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="card news-card">
+              <div class="news-accent accent-purple"></div>
+              <div class="news-content">
+                <span class="news-badge badge-purple">Événement</span>
+                <h3>Tournoi de jeux vidéo</h3>
+                <div class="news-meta">
+                  <span>📅 15 janvier 2025</span>
+                </div>
+                <div class="news-meta">
+                  <span>⏰ 14h00</span>
+                </div>
+                <p>
+                  Grand tournoi FIFA et Mario Kart ! Inscriptions sur place.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="card news-card">
+              <div class="news-accent accent-purple"></div>
+              <div class="news-content">
+                <span class="news-badge badge-purple">Événement</span>
+                <h3>Tournoi de jeux vidéo</h3>
+                <div class="news-meta">
+                  <span>📅 15 janvier 2025</span>
+                </div>
+                <div class="news-meta">
+                  <span>⏰ 14h00</span>
+                </div>
+                <p>
+                  Grand tournoi FIFA et Mario Kart ! Inscriptions sur place.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <h3>Espace Jeunesse Yenne</h3>
+            <p>
+              Un lieu d'accueil, d'échanges et d'activités pour les jeunes de 11
+              à 25 ans
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <h3>Contact</h3>
+                <div class="footer-info">
+                  <span>📞</span>
+                  <span>
+                    <a href="tel:0689653886"> 06.89.65.38.86 </a>
+                  </span>
+                </div>
+                <div class="footer-info">
+                  <span>✉️</span>
+                  <span>
+                    <a href="mailto:jeunesse@ccyenne.fr">
+                      jeunesse@ccyenne.fr
+                    </a>
+                  </span>
+                </div>
+                <div class="footer-info">
+                  <span>📍</span>
+                  <span>8, place du kiosque 73170 Yenne</span>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="footer-section">
+                  <h3>Horaires</h3>
+                  <p>
+                    Permanence : Le jeudi de 15h - 17h30 <br />ou Sur
+                    rendez-vous
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="footer-section">
+                  <h3>Règles de confidentialité</h3>
+                  <p>
+                    Ce site n’utilise aucun cookie et ne collecte ni
+                    n’enregistre aucune donnée personnelle lors de votre
+                    navigation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Communauté de Communes de Yenne - Espace Jeunesse</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <!-- Modal -->
+
+  <!-- Modal Info-jeunes-->
+  <div
+    class="modal fade"
+    id="Info-jeunesModal"
+    tabindex="-1"
+    aria-labelledby="InfoJeunesModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-white p-2">
+        <div class="modal-header bg-purple">
+          <h1 class="modal-title fs-5" id="InfoJeunesModalLabel">
+            <i class="bi bi-people text-white"></i> Ouvert à tous les jeunes
+          </h1>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <i class="bi bi-file-earmark-text text-purple"></i>
+              Monter des projets de sorties, d’activités, de vacances...
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-question-circle text-purple"></i> Répondre à vos
+              questions d’orientation, de prévention, d’insertion...
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-person-raised-hand text-purple"> </i>Participer à
+              des chantiers jeunes pour financer vos projets...
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-mortarboard text-purple"> </i>Se former, BAFA,
+              Baby-sitting, prevention, etc..
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer bg-purple">
+          <button
+            type="button"
+            class="btn-small btn-jeunesse"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal permanence-->
+  <div
+    class="modal fade"
+    id="permanenceModal"
+    tabindex="-1"
+    aria-labelledby="permanenceModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-white p-2">
+        <div class="modal-header bg-pink">
+          <h1 class="modal-title fs-5" id="permanenceModalLabel">
+            📅 Permanences er rendez-vous
+          </h1>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <p>L'espace jeunesse est ouvert et vous accueil tous les</p>
+            <h2>jeudis de 15h à 17h30</h2>
+            <p>___________ OU____________</p>
+            <h2>Sur rendez-vous</h2>
+            <p>
+              Prise de rendez-vous <br />
+              <a href="tel:0689653886"
+                ><i class="bi bi-telephone-fill"></i> 06.89.65.38.86</a
+              ><br />
+              <a href="mailto:jeunesse@ccyenne.fr"
+                ><i class="bi bi-envelope-arrow-up-fill"></i>
+                jeunesse@ccyenne.fr</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer bg-pink">
+          <button
+            type="button"
+            class="btn-small btn-jeunesse"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal localisation-->
+  <div
+    class="modal fade"
+    id="localModal"
+    tabindex="-1"
+    aria-labelledby="localModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-white p-2">
+        <div class="modal-header bg-blue d-flex align-items-center">
+          <div class="row w-100">
+            <div class="col-lg-8 col-md-7 col-sm-12 text-start">
+              <h1 class="modal-title fs-5" id="localeModalLabel">
+                📍 Place du kiosque, 73210 Yenne
+              </h1>
+            </div>
+
+            <div class="col-lg-4 col-md-5 col-sm-12 text-end">
+              <div class="text-white-modal-local">
+                <a href="tel:0689653886">
+                  <i class="bi bi-telephone-fill"></i> 06.89.65.38.86
+                </a>
+              </div>
+
+              <div class="text-white-modal-local">
+                <a href="mailto:jeunesse@ccyenne.fr">
+                  <i class="bi bi-envelope-arrow-up-fill"></i>
+                  jeunesse@ccyenne.fr
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.434051000952!2d5.754412375773543!3d45.702328517519604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b0db8817c2691%3A0x22d137d47124b8c6!2s8%20Pl.%20du%20Kiosque%2C%2073170%20Yenne!5e0!3m2!1sfr!2sfr!4v1772804956168!5m2!1sfr!2sfr"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="modal-footer bg-blue">
+          <button
+            type="button"
+            class="btn-small btn-jeunesse"
+            data-bs-dismiss="modal"
+          >
+            fermer
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>

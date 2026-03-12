@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 70px;
+  color: white !important;
+}
+
+.navbar a {
+  color: #fff !important;
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar a:hover {
+  color: rgb(30, 16, 55) !important;
+}
+.navbar a:after {
+  color: rgb(34, 18, 75) !important;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar-collapse {
+    background: linear-gradient(to right, #9333ea, #9333ea);
+    color: #f3e8ff;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+  }
+}
+
+.navbar-toggler {
+  background-color: white !important;
+}
