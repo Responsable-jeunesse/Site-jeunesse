@@ -434,3 +434,14 @@ footer {
 .card-emergency-text a:hover {
   font-weight: 800;
 }
+
+@media screen and (max-width: 990px) {
+  .address,
+  .text-white-modal-local {
+    text-align: center !important;
+    width: 100%;
+  }
+  h1 {
+    font-size: 35px !important;
+  }
+}

@@ -6,21 +6,18 @@
 
 .navbar {
   height: 70px;
-  color: white !important;
 }
 
 .navbar a {
-  color: #fff !important;
+  color: #fff;
   font-family: "Boldonse", system-ui;
   font-weight: 400;
-  font-style: normal;
+  text-transform: uppercase;
 }
 
 .navbar a:hover {
-  color: rgb(30, 16, 55) !important;
-}
-.navbar a:after {
-  color: rgb(34, 18, 75) !important;
+  color: #fff;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 990px) {
@@ -35,4 +32,42 @@
 
 .navbar-toggler {
   background-color: white !important;
+}
+
+.navbar .nav-link {
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #e5e8ec;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.navbar .nav-link:hover::after {
+  width: 50%;
+}
+
+.navbar .nav-link.active::after {
+  width: 50%;
+}
+
+.navbar .nav-link.active {
+  color: #c8d0db;
+  font-weight: 700 !important;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar a {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
