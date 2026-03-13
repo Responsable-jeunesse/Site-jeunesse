@@ -30,10 +30,10 @@
     data-bs-offset="100"
     tabindex="0"
   >
-    <header>
-      <!-- navBar -->
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
+    <!-- navBar -->
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container">
+        <div class="bg-white text-center rounded" style="max-width: 90px">
           <a class="navbar-brand" href="#">
             <img
               src="assets/logos/logo-espace-jeunesse.png"
@@ -41,44 +41,63 @@
               height="60"
             />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#accueil"
-                  >Accueil</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#activites">Actualités</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#actualites">Evènements</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#localModal"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
         </div>
-      </nav>
-    </header>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#accueil"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#activites">Actualités</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#actualites">Evènements</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#localModal"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="bg-white text-center rounded p-2 logo-comcom"
+          style="max-width: 150px"
+        >
+          <a
+            class="navbar-brand"
+            href="https://ccyenne.fr/"
+            target="_blank"
+            no_repear
+          >
+            <img
+              src="assets/logos/logo-comcom-yenne.png"
+              alt="logo-comcom-yenne"
+              height="40"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <header></header>
 
     <!-- Hero Section -->
     <section id="accueil" class="hero">
