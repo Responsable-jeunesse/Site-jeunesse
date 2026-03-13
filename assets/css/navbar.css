@@ -5,7 +5,8 @@
 }
 
 .navbar {
-  height: 70px;
+  height: 80px;
+  background-image: url(../../assets/images/bg_navbar.png);
 }
 
 .navbar a {
