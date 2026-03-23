@@ -111,10 +111,14 @@
             L'espace dédié à la jeunesse de la communauté de communes de Yenne
           </p>
           <div class="mb-3">
-            <a href="#" href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#localModal"
-                class="btn btn-secondary">Nous contacter</a>
+            <a
+              href="#"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#localModal"
+              class="btn btn-secondary"
+              >Nous contacter</a
+            >
           </div>
         </div>
       </div>
@@ -375,8 +379,13 @@
                     Événement
                   </span>
                   <h3>Soirée jeux + Tournoi de FIFA</h3>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#soiréeeJeuxModal">
+                    <i class="bi bi-file-image-fill"></i> Voir l'affiche
+                  </a> 
+                  <br>
                   <hr />
                   <div class="text-start col-center mb-2 p-2">
+                    
                     <span>📅 27 mars 2026</span><br />
                     <span>📍 Espace jeunesse</span><br />
                     <span>⏰ à partir de 18h00</span>
@@ -405,6 +414,9 @@
                     Sortie famille
                   </span>
                   <h3 class="mb-2">OL vs LORIENT</h3>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#sortieModal">
+                    <i class="bi bi-file-image-fill"></i> Voir l'affiche
+                  </a> 
                   <hr />
                   <div class="text-start col-center mb-2 p-2">
                     <span>📅 12 avril 2026</span><br />
@@ -437,6 +449,9 @@
                     Formation
                   </span>
                   <h3 class="mb-2">Formation BAFA</h3>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#bafaModal">
+                    <i class="bi bi-file-image-fill"></i> Voir l'affiche
+                  </a> 
                   <hr />
                   <div class="text-start col-center p-2">
                     <span>📅 du 11 au 18 avril 2026</span><br />
@@ -468,6 +483,9 @@
                     Emploi
                   </span>
                   <h3 class="mb-2">En avant l'emploi</h3>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#emploiModal">
+                    <i class="bi bi-file-image-fill"></i> Voir l'affiche
+                  </a> 
                   <hr />
                   <div class="text-start col-center mb-2 p-2">
                     <span>📅 le 22 avril 2026</span><br />
@@ -1019,6 +1037,80 @@
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------  Modal évènements  --------------->
+
+    <!-- Modal Soirée jeux -->
+    <div
+      class="modal fade"
+      id="soiréeeJeuxModal"
+      tabindex="-1"
+      aria-labelledby="soiréeeJeuxModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="assets/images/Soiree-Jeux.png" alt="Affiche-soirée-jeux" class="img-fluid">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Sortie famille -->
+    <div
+      class="modal fade"
+      id="sortieModal"
+      tabindex="-1"
+      aria-labelledby="sortieModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="assets/images/Affiche-sortie.png" alt="Affiche-sortie" class="img-fluid">
+          </div>    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal bafa -->
+    <div
+      class="modal fade"
+      id="bafaModal"
+      tabindex="-1"
+      aria-labelledby="bafaModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="assets/images/Affiche-bafa.png" alt="Affiche-sortie" class="img-fluid">
+          </div>    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Emploi -->
+    <div
+      class="modal fade"
+      id="emploiModal"
+      tabindex="-1"
+      aria-labelledby="bafaModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="assets/images/En-avant-l'emploi.png" alt="Affiche-sortie" class="img-fluid">
+          </div>    
           </div>
         </div>
       </div>
