@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      class="rounded"
+      href="assets/favicon/favicon-rounded.ico"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/medias.css" />
+
+    <title>Site jeunesse</title>
+  </head>
+
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbarNav"
+    data-bs-offset="100"
+    tabindex="0"
+  >
+    <!-- navBar -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand text-center" href="/">
+          <img
+            src="assets/logos/logo-espace-jeunesse.png"
+            alt="logo-espace-jeunesse"
+            height="60"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#accueil">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#carouselPhotos">À la une</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galerie">Galerie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="teamados.html">Team ados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="medias.html">Médias</a>
+            </li>
+          </ul>
+        </div>
+
+        <a
+          class="navbar-brand d-none d-lg-block"
+          href="https://ccyenne.fr/"
+          target="_blank"
+        >
+          <img
+            src="assets/logos/logo-comcom-yenne.png"
+            alt="logo-comcom-yenne"
+            height="40"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Intro -->
+      <section id="accueil" class="hero-section">
+        <div class="container text-center">
+          <h1 class="mb-3">Bienvenue à l'Espace Jeunesse</h1>
+          <p class="lead text-muted">
+            Découvrez nos temps forts, nos évènements et les meilleurs moments
+            en images.
+          </p>
+        </div>
+      </section>
+
+      <!-- Carousel -->
+      <section id="carouselPhotos" class="pb-5">
+        <div class="container">
+          <h2 class="section-title text-center">Les moments forts</h2>
+
+          <div
+            id="mainCarousel"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#mainCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#mainCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#mainCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+
+            <div class="carousel-inner rounded-4 shadow">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img
+                  src="assets/images/Sortie-famille-ol.jpg"
+                  class="d-block w-100"
+                  alt="Sortie famille au Groupama stadium"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Sortie familles</h5>
+                  <p>Sortie famille au Groupama stadium.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  src="assets/images/chantier-jeunes.jpg"
+                  class="d-block w-100"
+                  alt="Jeunes en évènement"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Les chantiers jeunes</h5>
+                  <p>
+                    Des moments forts tout au long de l'année pour les jeunes.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  src="assets/images/Soirée-jeux.jpg"
+                  class="d-block w-100"
+                  alt="Ambiance conviviale"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Convivialité et partage</h5>
+                  <p>
+                    Un espace vivant pour se retrouver et construire des
+                    projets.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#mainCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Précédent</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#mainCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Suivant</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galerie -->
+      <section id="galerie" class="pb-5">
+        <div class="container">
+          <h2 class="section-title text-center">Galerie photo</h2>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card gallery-card h-100">
+                <img
+                  src="assets/images/Sortie-famille-ol.jpg"
+                  class="card-img-top"
+                  alt="Animation jeunesse"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sortie famille</h5>
+                  <p class="card-text text-muted">
+                    Des temps d'échange et de découverte pour tous les
+                    participants lors du match OL vs Lotient.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card gallery-card h-100">
+                <img
+                  src="assets/images/chantier-jeunes.jpg"
+                  class="card-img-top"
+                  alt="Projet de groupe"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Les chantiers jeunes</h5>
+                  <p class="card-text text-muted">
+                    Notre Nouvelle présidente de la communauté de communes de
+                    Yenne avec les poseurs de parquets du chantier jeunes.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card gallery-card h-100">
+                <img
+                  src="assets/images/Soirée-jeux.jpg"
+                  class="card-img-top"
+                  alt="Sortie extérieure"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Soirée Jeux</h5>
+                  <p class="card-text text-muted">
+                    Des moments de découverte à l'espace jeunesse.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
