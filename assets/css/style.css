@@ -339,6 +339,9 @@ iframe {
 .accent-green {
   background: linear-gradient(to right, #10b981, #059669);
 }
+.accent-yellow {
+  background: linear-gradient(to right, #f0d807, #f2f54e);
+}
 
 .news-content {
   padding: 25px;
@@ -368,6 +371,11 @@ iframe {
 .badge-green {
   background: #d1fae5;
   color: #059669;
+}
+
+.badge-yellow {
+  background: #e6f55d;
+  color: #96055e;
 }
 
 .news-meta {
