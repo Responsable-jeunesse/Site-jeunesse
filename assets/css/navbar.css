@@ -6,14 +6,13 @@
 
 .navbar {
   height: 90px;
-  background-image: url(../../assets/images/bg_navbar4.png);
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
 .navbar a {
-  color: #fff !important;
+  color: #493c3c !important;
   font-family: "Boldonse", system-ui;
   font-weight: 400;
   text-transform: uppercase;
@@ -26,10 +25,10 @@
 
 @media screen and (max-width: 990px) {
   .navbar-collapse {
-    background-image: url(../../assets/images/nav-phone2.png);
     background-size: cover;
+    background: #fff;
     background-repeat: no-repeat;
-    color: #f3e8ff;
+    color: #493c3c !important;
     padding: 10px;
     border-radius: 0 0 15px 15px;
     text-align: center;
@@ -55,7 +54,7 @@
   bottom: 0;
   width: 0;
   height: 3px;
-  background-color: #e5e8ec;
+  background-color: #3371c2;
   transition: width 0.3s ease;
   border-radius: 2px;
 }
